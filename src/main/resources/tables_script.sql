@@ -1,6 +1,7 @@
 USE `authenticationDB`
 ;
 /****** Object:  Table `User`    Script Date: 01-09-2019 16:29:09 ******/
+/**http://localhost:8080/login?user=tanuj@gmail.com&pass=tanuj**/
 
 insert into User (`UserEmail`,`Password`,`Roles`,`Organization`) values ('tanuj@gmail.com','tanuj','[1,2,3]','1');
 
