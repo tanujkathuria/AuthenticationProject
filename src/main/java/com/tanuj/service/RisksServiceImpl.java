@@ -8,6 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import javax.swing.text.html.Option;
+import java.util.Optional;
+
 /**
  * @author Tanuj Kathuria
  * @version 1.0
@@ -22,6 +25,11 @@ public class RisksServiceImpl  implements RisksService{
     @Override
     public Iterable<Risk> getRisks() {
         return risksRepository.findAll();
+    }
+
+    @Override
+    public Optional<Risk> getRisk(String id) {
+         return risksRepository.findById(id);
     }
 
     @Override

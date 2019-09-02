@@ -43,6 +43,13 @@ public class MainController {
 		return map ;
 	}
 
+	@GetMapping("/getRisk/{id}")
+	public Map<String,Optional<Risk>> getRisk(@PathVariable String id)  {
+		Map<String, Optional<Risk>> map = new  HashMap<String, Optional<Risk>>();
+		map.put(id,risksService.getRisk(id));
+		return map ;
+	}
+
 	@GetMapping("/riskDetails")
 	public List<RiskDTO> getRisks(){
 		List<RiskDTO> risksDTOList =new ArrayList<RiskDTO>();
