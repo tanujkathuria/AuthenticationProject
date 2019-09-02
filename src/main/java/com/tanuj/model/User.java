@@ -1,14 +1,8 @@
 package com.tanuj.model;
 
-import java.util.List;
-
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name = "User")
@@ -36,7 +30,7 @@ public class User {
 	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
 	}
-	
+
 	public String getRoles() {
 		return roles;
 	}
@@ -49,6 +43,6 @@ public class User {
 	public void setOrganization(String organization) {
 		this.organization = organization;
 	}
-	
-	
+
+
 }

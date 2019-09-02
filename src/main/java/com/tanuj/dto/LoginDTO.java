@@ -1,8 +1,5 @@
 package com.tanuj.dto;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class LoginDTO {
 
 	private Long userId;
@@ -21,8 +18,8 @@ public class LoginDTO {
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-	
-	
+
+
 	public String getRoles() {
 		return roles;
 	}
@@ -35,7 +32,7 @@ public class LoginDTO {
 	public void setOrganization(String organization) {
 		this.organization = organization;
 	}
-	
-	
-	
+
+
+
 }

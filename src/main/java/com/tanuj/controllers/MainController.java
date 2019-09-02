@@ -68,7 +68,7 @@ public class MainController {
 		return risksService.addRisk(risk);
 	}
 
-	@PostMapping("/DeleteRisk/{id}")
+	@DeleteMapping("/DeleteRisk/{id}")
 	public ResponseEntity<String> deleteRisk(@PathVariable String id)
 	{
 		return risksService.deleteRisk(id);

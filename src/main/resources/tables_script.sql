@@ -3,6 +3,8 @@ USE `authenticationDB`
 /****** Object:  Table `User`    Script Date: 01-09-2019 16:29:09 ******/
 /**http://localhost:8080/login?user=tanuj@gmail.com&pass=tanuj
 HTTP://localhost:8080/DeleteRisk/RSK-003
+http://localhost:8080/riskDetails
+http://localhost:8080/getRisk/RSK-003
 **/
 
 insert into User (`UserEmail`,`Password`,`Roles`,`Organization`) values ('tanuj@gmail.com','tanuj','[1,2,3]','1');
