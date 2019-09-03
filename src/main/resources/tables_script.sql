@@ -7,7 +7,9 @@ http://localhost:8080/riskDetails
 http://localhost:8080/getRisk/RSK-003
 **/
 
-insert into User (`UserEmail`,`Password`,`Roles`,`Organization`) values ('tanuj@gmail.com','tanuj','[1,2,3]','1');
+insert into User (`UserEmail`,`Password`,`Roles`,`Organization`) values ('user1@gmail.com','user1','1','Finance');
+insert into User (`UserEmail`,`Password`,`Roles`,`Organization`) values ('user2@gmail.com','user2','2','Finance');
+insert into User (`UserEmail`,`Password`,`Roles`,`Organization`) values ('user3@gmail.com','user3','3','Finance');
 
 CREATE TABLE `User`(
   `UserId` int AUTO_INCREMENT NOT NULL,

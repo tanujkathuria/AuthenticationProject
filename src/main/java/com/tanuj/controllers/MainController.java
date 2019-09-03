@@ -37,10 +37,8 @@ public class MainController {
 	}
 
 	@GetMapping("/getRoles/{id}")
-	public Map<Integer, RolesDTO> getRoles(@PathVariable int id)  {
-		Map<Integer, RolesDTO> map = new  HashMap<Integer, RolesDTO>();
-		map.put(id,rolesService.getRoles(id));
-		return map ;
+	public  RolesDTO getRoles(@PathVariable int id)  {
+		return rolesService.getRoles(id) ;
 	}
 
 	@GetMapping("/getRisk/{id}")

@@ -34,17 +34,17 @@ public class RisksServiceImpl  implements RisksService{
     public ResponseEntity<String> addRisk(Risk risk) {
         Risk ris = risksRepository.save(risk);
         if(ris!=null){
-            return new ResponseEntity<>("RiskAdded", HttpStatus.OK);
+            return new ResponseEntity(ris,HttpStatus.OK);
         }
-        return new ResponseEntity<>("RiskAdded", HttpStatus.BAD_REQUEST);
+        return new ResponseEntity(HttpStatus.BAD_REQUEST);
     }
 
     @Override
-    public ResponseEntity<String> deleteRisk(String riskId) {
+    public ResponseEntity deleteRisk(String riskId) {
         risksRepository.deleteById(riskId);
         if(!risksRepository.existsById(riskId)){
-            return new ResponseEntity<>("RiskDeleted", HttpStatus.OK);
+            return new ResponseEntity(HttpStatus.OK);
         }
-        return new ResponseEntity<>("RiskDeleted", HttpStatus.BAD_REQUEST);
+        return new ResponseEntity(HttpStatus.BAD_REQUEST);
     }
 }
